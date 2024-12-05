@@ -1,0 +1,158 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.btn-small-width {
+    width: 120px;
+    height: 38px;
+    text-align: center;
+    padding: 4px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 450px;
+    position: fixed;
+    top: 0;
+    left: -450px;
+    background-color: white;
+    padding-top: 20px;
+    color: #333;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.sidebar h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+/* When the sidebar is open */
+.sidebar.open {
+    left: 0;
+}
+
+/* Style the buttons */
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Button styles for individual buttons */
+#openSidebarBtn {
+    background-color: #007bff;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    text-align: center
+}
+
+#closeSidebar {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
